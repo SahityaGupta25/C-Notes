@@ -20,11 +20,40 @@ int main()
 int main() {
    // Write C code here
    int a=2,b=3;
-   printf("a=");
-   printf("%d and ",a);
-   printf("b=");
-   printf("%d",b);
+   printf("a=%d and b=%d",a,b);
+   
+   
+   
    
    return 0;
 }
 
+// a=5 & b=6
+#include <stdio.h>
+
+int main() {
+   // Write C code here
+   int a=2,b=3;
+   printf("a=%d & b=%d",a,b);
+   
+   
+   
+   
+   return 0;
+}
+
+
+
+// value of a is 5 and value of b is 6
+#include <stdio.h>
+// value of a is 5 and value of b is 6
+int main() {
+   // Write C code here
+   int a=5,b=6;
+   printf("value of a is %d and value of b is %d",a,b);
+   
+   
+   
+   
+   return 0;
+}
