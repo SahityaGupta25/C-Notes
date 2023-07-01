@@ -15,3 +15,16 @@ int main()
 }
 
 // a=5 and b=6
+#include <stdio.h>
+
+int main() {
+   // Write C code here
+   int a=2,b=3;
+   printf("a=");
+   printf("%d and ",a);
+   printf("b=");
+   printf("%d",b);
+   
+   return 0;
+}
+
