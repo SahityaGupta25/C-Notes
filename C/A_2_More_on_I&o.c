@@ -148,3 +148,17 @@ main()
     printf("Your Entered Date is==> %d%c%d%c%d\n",d,c_1,m,c_2,y);
     printf("Day-%d Month-%d Year-%d",d,m,y);
 }
+
+
+// 10. Write a Program to input time in this format HH:MM and give output like this HH hour & MM minute.
+
+#include <stdio.h>
+main()
+{
+    int h,m;
+    char c;
+    printf("Enter Time in this format ==>> 'HH:MM'  =");
+    scanf("%d%c%d",&h,&c,&m);
+    printf("%d Hours & %d Minutes",h,m);
+    return 0;
+}
