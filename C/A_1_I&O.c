@@ -87,9 +87,10 @@
 
  int main()
  {
-int p=3.14,a,r;
-printf("Enter radius =\t");
+int r;
+float a;
+printf("Enter radius of Circle =\t");
 scanf("%d",&r);
-a=p*(r*r);
-printf("Area of Circle =\t%f",a);
+a=3.14*r*r;
+printf("Area of Circle = %f havin the radius %d",a,r);
  }

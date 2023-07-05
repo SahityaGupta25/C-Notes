@@ -67,13 +67,13 @@ main()
 
 main()
 {
-    int cost,sell,margin;
-    printf("Enter the Cost Price of Banana per Dozen = ");
-    scanf("%d",&cost);
-    printf("Enter the Sale Price of Banana per Dozen = ");
-    scanf("%d",&sell);
-    margin=sell-cost;
-    printf("The Profit We Earned upon Selling 25 bananas is = %d",25*margin);
+    float cost,sell,margin;
+    printf("Enter the Cost Price of 12 Bananas = ");
+    scanf("%f",&cost);
+    printf("Enter the Sale Price of 12 Bananas = ");
+    scanf("%f",&sell);
+    margin=(sell-cost)*25/12;
+    printf("The Profit We Earned upon Selling 25 bananas is = %f",margin);
     return 0;
 }
 
