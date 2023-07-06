@@ -47,9 +47,9 @@ int main() {
 // 4. Write a Program to print a unit digit.
 
 
-// #include <stdio.h>
-
 /*
+#include <stdio.h>
+
 int main() {
     // Write C code here
     int x=93,y;
@@ -61,7 +61,9 @@ int main() {
 }
 */
 
-// Write a program to print a given number without it's last digit.
+// 5. Write a program to print a given number without it's last digit.
+
+/*
 #include <stdio.h>
 int main() 
 {
@@ -70,3 +72,19 @@ int main()
     printf("Number without it's last digit is = %d",x/10);
     return 0;
 }
+*/
+
+// 6. Write a program to swap two variables.
+
+#include<stdio.h>
+main()
+{
+    int x=56,y=78,z;
+    printf("The value of x is = %d and y is = %d\n",x,y);
+    z=x;
+    x=y;
+    y=z;
+    printf("The value of New x is = %d and New y is = %d",x,y);
+    return 0;
+}
+
