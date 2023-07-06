@@ -47,8 +47,9 @@ int main() {
 // 4. Write a Program to print a unit digit.
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
+/*
 int main() {
     // Write C code here
     int x=93,y;
@@ -56,5 +57,16 @@ int main() {
     printf("The Unit digit of %d is = %d",x,y);
    
 
+    return 0;
+}
+*/
+
+// Write a program to print a given number without it's last digit.
+#include <stdio.h>
+int main() 
+{
+    // Write C code here
+    int x=93;
+    printf("Number without it's last digit is = %d",x/10);
     return 0;
 }
