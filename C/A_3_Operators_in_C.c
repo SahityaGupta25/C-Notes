@@ -76,6 +76,7 @@ int main()
 
 // 6. Write a program to swap two variables.
 
+/*
 #include<stdio.h>
 main()
 {
@@ -88,3 +89,17 @@ main()
     return 0;
 }
 
+*/
+// 7. Write a program to swap two variables without using third variable.
+
+#include<stdio.h>
+main()
+{
+    int x=48,y=52;
+    printf("The value of x is = %d and y is = %d\n",x,y);
+    x=x+y;
+    y=x-y;
+    x=x-y;
+    printf("The value of New x is = %d and New y is = %d",x,y);
+    return 0;
+}
