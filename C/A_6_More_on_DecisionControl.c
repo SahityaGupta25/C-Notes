@@ -55,6 +55,7 @@ main()
 
 // 3.Write a program to take marks of 5 Subjects from the user . Assume marks are given out of 100 & passing is 33 . Now display whether the candidate passed the examination or failed.
 
+/*
 #include <stdio.h>
 main()
 {
@@ -69,7 +70,7 @@ main()
     scanf("%d",&d);
     printf("Enter marks of fifth subject\n");
     scanf("%d",&e);
-    marks=(a+b+c+d+e/100)*100;
+    marks=(a+b+c+d+e)/100*100;
     printf("%d",marks);
     if (marks>=33)
     {
@@ -78,6 +79,30 @@ main()
     else
     {
         printf("Fail");
+    }
+    return 0;
+}
+*/
+
+
+// 4. Write a program to check whether a given alphbet is in uppercase or lowercase.
+
+#include <stdio.h>
+main()
+{
+    char a;
+    printf("Enter a single alphabet\n");
+    scanf("%c",&a);
+    if (a>=65 && a<=90)
+    {
+        printf("Upper Case");
+    }
+    else if (a>=97 && a<=122)
+    {
+        printf("Lower Case");
+    }
+    else{
+        printf("Enter an Alphabet");
     }
     return 0;
 }
