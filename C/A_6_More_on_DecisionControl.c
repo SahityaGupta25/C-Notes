@@ -1,0 +1,83 @@
+// 1.Write a program to check whether given number is a three digit or not.
+
+/*
+#include <stdio.h>
+main()
+{
+    int a,b,c;
+    printf("Enter first (a) number\n");
+    scanf("%d",&a);
+    printf("Enter Second (b) number\n");
+    scanf("%d",&b);
+    printf("Enter Third (c) number\n");
+    scanf("%d",&c);
+    if (a>b && b>c)
+    {
+        printf("a = %d is greater",a);
+    }
+    else if (b>a && b>c)
+    {
+        printf("b = %d is greater",b);
+    }
+    else{
+        printf("c = %d is greater",c);
+    }
+
+    return 0;
+}
+*/
+
+/*
+// 2. Write a program which takes cost price & selling price of a product from the user. Now calculate  & print profit or loss percentage.
+
+
+#include <stdio.h>
+main()
+{
+    float cost,sell,price;
+    printf("Enter Cost Price\n");
+    scanf("%f",&cost);
+    printf("Enter Selling Price\n");
+    scanf("%f",&sell);
+    price=sell-cost;
+    if (sell>cost)
+    {
+        printf("Profit = %f%%",(price/cost)*100);
+    }
+    else{
+        printf("Loss = %f%%",(price/cost)*100);
+    }
+    return 0;
+
+
+}
+*/
+
+// 3.Write a program to take marks of 5 Subjects from the user . Assume marks are given out of 100 & passing is 33 . Now display whether the candidate passed the examination or failed.
+
+#include <stdio.h>
+main()
+{
+    int a,b,c,d,e,marks;
+    printf("Enter marks of first subject\n");
+    scanf("%d",&a);
+    printf("Enter marks of second subject\n");
+    scanf("%d",&b);
+    printf("Enter marks of third subject\n");
+    scanf("%d",&c);
+    printf("Enter marks of fourth subject\n");
+    scanf("%d",&d);
+    printf("Enter marks of fifth subject\n");
+    scanf("%d",&e);
+    marks=(a+b+c+d+e/100)*100;
+    printf("%d",marks);
+    if (marks>=33)
+    {
+        printf("Pass");
+    }
+    else
+    {
+        printf("Fail");
+    }
+    return 0;
+}
