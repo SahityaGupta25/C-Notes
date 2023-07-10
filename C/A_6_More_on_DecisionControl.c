@@ -87,6 +87,7 @@ main()
 
 // 4. Write a program to check whether a given alphbet is in uppercase or lowercase.
 
+/*
 #include <stdio.h>
 main()
 {
@@ -103,6 +104,49 @@ main()
     }
     else{
         printf("Enter an Alphabet");
+    }
+    return 0;
+}
+*/
+
+// 5. Write a program to check whether a given number is divisible by 2 and 3.
+
+/*
+#include <stdio.h>
+main()
+{
+    int a;
+    printf("Enter a number\n");
+    scanf("%d",&a);
+    if (a%2==0 && a%3==0)
+    {
+        printf("Divisible by 2 & 3");
+    }
+    else{
+        printf("Not Divisible");
+    }
+    return 0;
+}
+*/
+
+// 6. Write a program to check whether a given number is divisible by 7 or 3.
+
+#include <stdio.h>
+main()
+{
+    int a;
+    printf("Enter a number\n");
+    scanf("%d",&a);
+    if (a%3==0 )
+    {
+        printf("Divisible by 3");
+    }
+    else if (a%7==0)
+    {
+       printf("Divisible by 7");
+    }
+    else{
+        printf("Not Divisible");
     }
     return 0;
 }
