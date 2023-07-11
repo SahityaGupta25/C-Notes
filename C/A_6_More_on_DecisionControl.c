@@ -183,7 +183,8 @@ main()
 }
 */
 
-
+// 9.C program to check whether a triangle is valid, given sides of triangle
+/*
 #include <stdio.h>  
    
 int main() {  
@@ -200,4 +201,39 @@ int main() {
     }  
    
     return 0;  
+}
+*/
+
+// 10. Write a program which takes input as a number and display number of days in a month.
+// January: 31 days
+// February: 28 days and 29 in every leap year
+// March: 31 days
+// April: 30 days
+// May: 31 days
+// June: 30 days
+// July: 31 days
+// August: 31 days
+// September: 30 days
+// October: 31 days
+// November: 30 days
+// December: 31 days
+
+#include <stdio.h>  
+   
+int main() {  
+    int a,b;
+    printf("Enter a number(month)\nDo not enter number > 12 = ");
+    scanf("%d",&a);
+    if (a==1 || a==3 || a==5 ||a==7 ||a==8 ||a==10 || a==12)
+    {
+        printf("Month consist 31 Days");
+    }
+    else if (a==2)
+    {
+        printf("28 days and 29 in every leap year");
+    }
+    else{
+        printf("30 Days");
+    }
+    return 0;
 }
