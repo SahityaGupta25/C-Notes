@@ -131,6 +131,7 @@ main()
 
 // 6. Write a program to check whether a given number is divisible by 7 or 3.
 
+/*
 #include <stdio.h>
 main()
 {
@@ -149,4 +150,54 @@ main()
         printf("Not Divisible");
     }
     return 0;
+}
+*/
+
+/*
+// 8.Write a program to check whether a given character is an alphabet , a special character , a digit , an alphabet (UPPER CASE) or an alphabet (lower case).
+
+
+#include <stdio.h>
+main()
+{
+    char a,b;
+    printf("Enter a Character\n");
+    scanf("%c",&a);
+    b=("%d",a);
+    if (b>=48 && b<=57){
+        printf("You Entered a Number");
+    }
+    else if (b>=97 && b<=122)
+    {
+        printf("You Entered an alphabet (lower case)");
+    }
+    else if (b>=65 && b<=190)
+    {
+        printf("You Entered an alphabet (UPPER CASE)");
+    }
+    else
+    {
+        printf("Special Character");
+    }
+    return 0;
+}
+*/
+
+
+#include <stdio.h>  
+   
+int main() {  
+    int side1, side2, side3;  
+    
+    printf("Enter Length of Sides of a Triangle\n");  
+    scanf("%d %d %d", &side1, &side2, &side3);     
+   
+    if((side1 + side2 > side3)&&(side2 + side3 > side1)
+            &&(side3 + side1 > side2)) {  
+        printf("It is a Valid Triangle\n");  
+    } else {  
+        printf("It is an invalid Triangle");  
+    }  
+   
+    return 0;  
 }
