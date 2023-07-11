@@ -57,6 +57,7 @@ int main()
 
 // 5.Write a program to input a number from the user and also input a digit . Append a digit in a number and print the resulting number (Example number - 234 digit=7 resulting output - 2347)
 
+/*
 #include<stdio.h>
 int main()
 {
@@ -69,6 +70,7 @@ int main()
     printf("Resulting output = %d",z);
     return 0;
 }
+*/
 
 // 6. Assume price of 1 USD is INR 84.23 . Write a program to take the amount in INR and convert it into USD.
 /*
@@ -83,3 +85,18 @@ main()
     return 0;
 }
 */
+
+// 7.Write a program to take a three digit from the user and rotate its digits one position towards in right direction.
+
+
+#include<stdio.h>
+main()
+{
+    int x,y,z;
+    printf("Enter a three digit number\n");
+    scanf("%d",&x);
+    y=(x%10*100);
+    z=x/10;
+    printf("The Rotated Number is = %d",(y+z));
+    return 0;
+}
