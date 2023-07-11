@@ -79,7 +79,7 @@ main()
     printf("Enter amount in ruppes = ");
     scanf("%f",&inr);
     m=inr/d;
-    printf("The amount in dollars is =%f",m);
+    printf("The amount in dollars is =%0.2f",m);
     return 0;
 }
 */
