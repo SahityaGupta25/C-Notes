@@ -198,7 +198,7 @@ int main()
 */
 
 // 10. Table of 5
-
+/*
 #include<stdio.h>
 int main()
 {
@@ -213,3 +213,7 @@ int main()
     return 0;
     
 }
+*/
+
+
+
