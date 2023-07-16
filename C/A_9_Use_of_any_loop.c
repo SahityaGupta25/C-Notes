@@ -12,6 +12,25 @@ int main()
 printf("The Factorial of %d is = %d",x,s);
         return 0;
 }
+
+// 7. Write a program to Count digits in a given number.
+
+
+#include<stdio.h>
+int main()
+{
+    int x,i,c=0;
+        printf("Enter a Number = ");
+        scanf("%d",&x);
+        while (x!=0)
+        {
+            x=x/10;
+            c++;
+        }
+        printf("The Digits in this number is = %d",c);
+        return 0;
+}
+
 // 8. Write a program to calculate whether a given number is prime or not.
 #include<stdio.h>
 int main()
@@ -40,9 +59,26 @@ int main()
     
 return 0;
 }
+// 9. Write a program to calculate to Calculate the LCM of two numbers.
+
 
 // 10. Write a program to Reverse a Given Number 
-
+int main()
+{
+    int x,y,i;
+        printf("Enter two Numbers \n");
+        scanf("%d %d",&x,&y);
+        for ( i = 1; i <= x*y; i++)
+        {
+            if (i%x==0 && i%y==0)
+            {
+                break;
+            }
+        }
+        printf("LCM of %d & %d is = %d",x,y,i);
+        
+        return 0;
+}
 
 #include<stdio.h>
 int main()
