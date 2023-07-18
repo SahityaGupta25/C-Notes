@@ -1,0 +1,32 @@
+A-9 (Use of Any Loop)
+8. Write a program to calculate whether a given number is prime or not.
+10. Write a program to Reverse a Given Number.
+6. Calculate Factorial of a Numbers.
+7. Write a program to Count digits in a given number.
+9. Write a program to calculate to Calculate the LCM of two numbers.
+
+
+A-11 (Pattern)
+2.
+
+    *
+   **
+  ***
+ ****
+*****
+4.
+*****
+ ****
+  ***
+   **
+    *
+____________________________________________________________________________________________________________________________________________________________________________________________
+A-11 (Pattern)
+
+6.
+1
+21
+321
+4321
+54321
+
