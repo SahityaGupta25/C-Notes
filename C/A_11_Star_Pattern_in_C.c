@@ -207,3 +207,76 @@ int main()
                 return 0; 
             }
 */
+
+/*
+7. 
+ABCDE
+ ABCD
+  ABC
+   AB
+    A
+*/
+
+/*
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    char x;
+        
+        for ( i = 1; i <= 4; i++)
+        {
+            x=65;
+            for ( j = 1; j <= 4 ; j++)
+            {
+                if (j>=i)
+                {
+                    printf("%c",x++);
+                }
+                else{
+                    printf(" ");
+                }
+                
+                
+            }
+            printf("\n");
+        }
+                return 0; 
+            }
+*/
+
+/*
+8.
+1
+23
+456
+78910
+*/
+
+#include<stdio.h>
+int main()
+{
+    int i,j,s; 
+     for ( i = 1,s=1; i <= 4; i++)
+        {
+            for ( j = 1; j <= 4 ; j++)
+            {
+                if (j<=i)
+                {
+                    
+                    printf("%d",s++);
+    
+                    
+                    
+                }
+                else{
+                    printf(" ");
+                }
+                
+                
+            }
+            printf("\n");
+        }
+            
+                return 0; 
+            }
