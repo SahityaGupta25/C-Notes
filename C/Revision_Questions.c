@@ -72,7 +72,7 @@ int main()
 */
 
 // 6. Calculate Factorial of a Numbers.
-
+/*
 #include<stdio.h>
 int main()
 {
@@ -86,3 +86,78 @@ int main()
     printf("The Factorial of %d is = %d",x,s);
     return 0;
 }
+*/
+
+/*
+A-11 (Pattern)
+2.
+
+    *
+   **
+  ***
+ ****
+*****
+*/
+
+/*
+#include<stdio.h>
+int main()
+{
+    int x,i,j;
+    printf("Enter a Number\n");
+    scanf("%d",&x);
+    for ( i = 1; i <=x; i++)
+    {
+        for ( j = 1; j <=x; j++)
+        {
+            if (j>=6-i)
+            {
+                printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+        
+    }
+    return 0;
+   
+}
+*/
+
+/*
+4.
+*****
+ ****
+  ***
+   **
+    *
+*/
+
+/*
+#include<stdio.h>
+int main()
+{
+    int x,i,j;
+    printf("Enter a Number\n");
+    scanf("%d",&x);
+    for ( i = 1; i <=x; i++)
+    {
+        for ( j = 1; j <=x; j++)
+        {
+            if (j>=i)
+            {
+                printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+        
+    }
+    return 0;
+   
+}
+*/

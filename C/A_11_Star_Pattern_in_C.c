@@ -37,7 +37,7 @@ int main()
 *****
 
 */
-
+/*
 #include<stdio.h>
 int main()
 {
@@ -62,9 +62,79 @@ int main()
         }
                 return 0; 
             }
+*/
+
+/*
+3.
+*****
+****
+***
+**
+*
+
+#include <stdio.h>
+   int main()
+   {
+    int x,i,j;
+        printf("Enter a Number = ");
+        scanf("%d",&x);
+        for ( i = 1; i <= x; i++)
+        {
+            for ( j = 1; j <= x ; j++)
+            {
+                if (j<=6-i)
+                {
+                    printf("*");
+                }
+                else{
+                    printf(" ");
+                }
+                
+                
+            }
+            printf("\n");
+        }
+                return 0; 
+            }
+*/
+
+/*4.
+*****
+ ****
+  ***
+   **
+    *
+    */
+   /*
+   #include <stdio.h>
+   int main()
+   {
+    int x,i,j;
+        printf("Enter a Number = ");
+        scanf("%d",&x);
+        for ( i = 1; i <= x; i++)
+        {
+            for ( j = 1; j <= x ; j++)
+            {
+                if (j>=i)
+                {
+                    printf("*");
+                }
+                else{
+                    printf(" ");
+                }
+                
+                
+            }
+            printf("\n");
+        }
+                return 0; 
+            }
+   */
 
 /*
 5.
+
 1
 12
 123
@@ -108,4 +178,32 @@ int main()
 4321
 54321
 
+*/
+
+/*
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    char x;
+        
+        for ( i = 1; i <= 4; i++)
+        {
+            x=48+i;
+            for ( j = 1; j <= 4 ; j++)
+            {
+                if (j<=i)
+                {
+                    printf("%c",x--);
+                }
+                else{
+                    printf(" ");
+                }
+                
+                
+            }
+            printf("\n");
+        }
+                return 0; 
+            }
 */
