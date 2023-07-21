@@ -1,8 +1,28 @@
 // A-10 (Level up with Loops)
+
+// 2. Write a program to find N terms of fibonacci series.
+
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int x,i,t1=0,t2=1,t3;
+    printf("Enter a number to print first N Terms = ");
+    scanf("%d",&x);
+    printf("%d\n%d\n",t1,t2);
+    for ( i =2; i<=x-2; i++){
+        t3=t1+t2;
+    printf("%d\n",t3);
+        t1=t2;
+        t2=t3;
+
+    }
+return 0;
+}
+
 // 4. Write a program to calculate HCF of two numbers
 
-//6. Write a program to print prime number under 100.
-
+/*
 #include <stdio.h>
 
 int main() {
@@ -21,6 +41,9 @@ int main() {
     printf("The HCF is = %d",i);
     
 }
+*/
+//6. Write a program to print prime number under 100.
+
 
 
 
