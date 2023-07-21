@@ -30,3 +30,16 @@ A-11 (Pattern)
 4321
 54321
 
+7. 
+ABCDE
+ ABCD
+  ABC
+   AB
+    A
+
+A-10 (Level up with Loops)
+
+10. Write a program to print all Armstrong Number under 1000.
+4. Write a program to calculate HCF of two numbers.
+6. Write a program to print prime number under 100.
+
