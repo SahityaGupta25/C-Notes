@@ -61,8 +61,6 @@ return 0;
 }
 // 9. Write a program to calculate to Calculate the LCM of two numbers.
 
-
-// 10. Write a program to Reverse a Given Number 
 int main()
 {
     int x,y,i;
@@ -79,6 +77,8 @@ int main()
         
         return 0;
 }
+
+// 10. Write a program to Reverse a Given Number 
 
 #include<stdio.h>
 int main()
