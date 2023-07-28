@@ -51,3 +51,24 @@ int number(int a){
         return 0;
     }
 }
+
+// 4. Write a function to print N Natural Numbers (TSRN)
+
+#include <stdio.h>
+void number(int);
+int main() {
+    // Write C code here
+    int x,y;
+    printf("Enter a number=\t");
+    scanf("%d",&x);
+    number(x);
+    return 0;
+}
+void number(int a){
+   int b,i;
+   for (int i = 1; i <= a; i++)
+   {
+    printf("%d\n",i);
+   }
+   
+}
