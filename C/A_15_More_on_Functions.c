@@ -1,3 +1,5 @@
+// A-15 More_on_Functions
+// 1. Write a function to find lcm between 2 numbers.
 #include <stdio.h>
 int lcm (int,int);
 int main() {
