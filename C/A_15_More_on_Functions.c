@@ -92,3 +92,68 @@ int prime(int x)
         }
     }
 }
+
+// 4. Write a function to find the next prime number of a given number. (TSRS)
+
+#include <stdio.h>
+int prime(int);
+int main()
+{
+int n,p;
+printf("Enter a Number");
+scanf("%d",&n);
+p=prime(n);
+printf("The next Prime Number is = %d",p);
+return 0;
+}
+
+int prime(int x){
+    int i,j;
+    for(i=x;i<=x*2;i++){
+        for ( j = 2; j <= i-1; j++)
+        {
+            if (i%j!=0)
+            {
+                
+                printf("%d",j);
+                return i;
+            }
+            
+        }
+        
+    }
+}
+
+// 9. Write a function to print all armstrong numbers between two given numbers (TSRN)
+
+#include <stdio.h>
+void arm(int, int);
+int main()
+{
+    // Write C code here
+    int x, y;
+    printf("Enter a Lowerlimit =\t");
+    scanf("%d", &x);
+    printf("Enter a Upperlimit =\t");
+    scanf("%d", &x);
+    arm(x, y);
+
+    return 0;
+}
+
+void arm(int x, int y){
+    int i,r;
+    for(i=x;i<=y;i++){
+        int s=0;
+        while(x!=0){
+            r=x%10;
+            s=s+r*r*r;
+            x=x/10;
+            
+        }
+            if (s==i)
+            {
+                printf("%d",s);
+            }
+    }
+}
