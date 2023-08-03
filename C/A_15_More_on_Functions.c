@@ -99,28 +99,28 @@ int prime(int x)
 int prime(int);
 int main()
 {
-int n,p;
-printf("Enter a Number");
-scanf("%d",&n);
-p=prime(n);
-printf("The next Prime Number is = %d",p);
-return 0;
+    int n, p;
+    printf("Enter a Number");
+    scanf("%d", &n);
+    p = prime(n);
+    printf("The next Prime Number is = %d", p);
+    return 0;
 }
 
-int prime(int x){
-    int i,j;
-    for(i=x;i<=x*2;i++){
-        for ( j = 2; j <= i-1; j++)
+int prime(int x)
+{
+    int i, j;
+    for (i = x; i <= x * 2; i++)
+    {
+        for (j = 2; j <= i - 1; j++)
         {
-            if (i%j!=0)
+            if (i % j != 0)
             {
-                
-                printf("%d",j);
+
+                printf("%d", j);
                 return i;
             }
-            
         }
-        
     }
 }
 
@@ -141,19 +141,48 @@ int main()
     return 0;
 }
 
-void arm(int x, int y){
-    int i,r;
-    for(i=x;i<=y;i++){
-        int s=0;
-        while(x!=0){
-            r=x%10;
-            s=s+r*r*r;
-            x=x/10;
-            
+void arm(int x, int y)
+{
+    int i, r;
+    for (i = x; i <= y; i++)
+    {
+        int s = 0;
+        while (x != 0)
+        {
+            r = x % 10;
+            s = s + r * r * r;
+            x = x / 10;
         }
-            if (s==i)
-            {
-                printf("%d",s);
-            }
+        if (s == i)
+        {
+            printf("%d", s);
+        }
+    }
+}
+
+// 10. Write a function to find the  sum of First N terms of the series 1!/1 + 2!/2 ............. n!/n (TSRS).
+
+#include <stdio.h>
+int terms(int);
+int main()
+{
+    int n, t;
+    printf("Enter value of Nth Term = ");
+    scanf("%d", &n);
+    t = terms(n);
+    printf("The next Prime Number is = %d", t);
+    return 0;
+}
+int terms(int n)
+{
+    int i, f , j, s = 0;
+    for (i = 1; i <= n; i++)
+    {
+        f=1;
+        for (j = 1; j <= i; j++)
+        {
+            f = f * j;
+            s = f / i + s;
+        }
     }
 }
