@@ -70,3 +70,35 @@ if (x%2!=0)
     }
     
 }
+
+// 4. Write a Recursive function to print first N ODD natural numbers in Reverse Order .
+
+
+
+// 5. Write a FUNCTION TO PRINT First N Even Natural Numbers.
+
+#include <stdio.h>
+void evennatural(int);
+int main()
+{
+    int x;
+    printf("Enter value of n = ");
+    scanf("%d",&x);
+    evennatural(x*2);
+    return 0;
+}
+
+void evennatural(int x){
+    if (x>=2)
+    {
+    evennatural(x-1);
+if (x%2==0)
+{
+    
+    printf(" %d",x);
+}
+
+        
+    }
+    
+}
