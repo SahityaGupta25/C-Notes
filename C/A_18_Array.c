@@ -96,7 +96,7 @@ int main() {
         }
         
     }
-    printf("The Smallest Number in this Array is = %d",large);
+    printf("The Largest Number in this Array is = %d",large);
     
     return 0;
 }
@@ -139,7 +139,46 @@ int main() {
 
 // 7. Write a program to calculate the second Largest number in an array entered by the user stored in an array of size 10 . Take array values from the user.
 
+#include <stdio.h>
 
+int main() {
+    // Write C code here
+    int i,a[10],large,j,s_large;
+    printf("Enter 10 Numbers\n");
+    for ( i = 0; i <=9; i++)
+    {
+        scanf("%d",&a[i]);
+    }
+
+    printf("Array\n");
+    for  (i = 0; i <=9; i++)
+    {
+    printf("%d ",a[i]);
+    }
+
+    large=a[9];
+    for ( i = 0; i < 9; i++)
+    {
+        if (large<a[i])
+        {
+            large=a[i];
+        }
+        
+    }
+    s_large=a[8];
+    for ( i = 0; i < 8; i++)
+    {
+        if (a[i] != large && s_large<a[i])
+        {
+            s_large=a[i];
+        }
+        
+    }
+    
+    printf("The Smallest Number in this Array is = %d",large);
+    
+    return 0;
+}
 
 // 8. Write a program to calculate the second smallest number in an array entered by the user stored in an array of size 10 . Take array values from the user.
 
