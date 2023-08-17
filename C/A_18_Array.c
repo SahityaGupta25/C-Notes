@@ -137,6 +137,50 @@ int main() {
     return 0;
 }
 
+
+// 6. Write a program to sort an array values entered by the user stored in an array of size 10 . Take array values from the user.
+
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int i,a[10],j,temp;
+    printf("Enter 10 Numbers\n");
+    for ( i = 0; i <=9; i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("OLD Array\n");
+    for  (i = 0; i <=9; i++)
+    {
+    printf("%d ",a[i]);
+    }
+
+    for ( i = 0; i < 10; i++)
+    {
+        for ( j = i+1; j < 10; j++)
+        {
+            if (a[i]>a[j])
+            {
+                temp=a[i];
+                a[i]=a[j];
+                a[j]=temp; 
+            }
+            
+        }
+        
+    }
+    printf("New Array\n");
+    for  (i = 0; i <=9; i++)
+    {
+    printf("%d ",a[i]);
+    }
+
+    
+    return 0;
+}
+
+
 // 7. Write a program to calculate the second Largest number in an array entered by the user stored in an array of size 10 . Take array values from the user.
 
 #include <stdio.h>
