@@ -123,36 +123,50 @@ int fact(int x){
    }
 return z;   
 }
+// 9. Write a function to check whether a given number contains a given digit or not.(TSRS)
+
+#include <stdio.h>
+int number(int,int);
+int main() {
+    // Write C code here
+    int x,n,a;
+    printf("Enter a number");
+    scanf("%d",&n);
+    printf("Enter a Digit which you want to check");
+    scanf("%d",&x);
+    a=number(n,x);
+   if (a==1)
+   {
+    printf("%d is there in the given number",x);
+   }
+   else if (a==0)
+   {
+    printf("%d is not there in the given number",x);
+   }
+   
+   
+
+    return 0;
+}
+int number(int n,int x){
+    int b;
+    while (n!=0)
+    {
+        b=n%10;
+        if (b==x){
+            break;
+        }
+        n=n/10;
+    }
+    if (n==0)
+        return 0;
+    else 
+     return 1;
+    
+
+}
 
 // 10. Write a function to print all prime factors of a given number. For example , if the number is 36 , then your result should be 2,2,3,3 (TSRN)
 
-#include <stdio.h>
-void factor(int);
-int main() {
-    // Write C code here
-    int x;
-    printf("Enter a number=\t");
-    scanf("%d",&x);
-    factor(x);
-    return 0;
-}
-void factor(int x){
-    int i,j;
-    for (int i = 2; i <= x; i++)
-    {
-        if (i%x==0)
-        {
-            for (int j = 2; j <= i-1; j++)
-            {
-                if (j%i!=0)
-                {
-                    printf("%d,",j);
-                }
-                
-            }
-            
-        }
+
         
-    }
-    
-}
