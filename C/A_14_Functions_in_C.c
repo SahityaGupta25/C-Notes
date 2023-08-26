@@ -20,6 +20,12 @@ float area(float r){
 
 }
 
+// 2. Write a function  to calculate Simple Intrest. (TSRS)
+
+
+
+
+
 // 3.Write a function that a function is even or odd . Return 1 if even , otherwise odd (TSRS)
 
 
@@ -74,6 +80,27 @@ void number(int a){
    
 }
 
+// 5. Write a function to print N ODD Natural Numbers (TSRN)
+
+#include <stdio.h>
+void number(int);
+int main() {
+    // Write C code here
+    int x;
+    printf("Enter a number=\t");
+    scanf("%d",&x);
+    number(x);
+    return 0;
+}
+void number(int a){
+   int i;
+   for (int i = 1; i <= a*2; i+=2)
+   {
+    printf("%d\n",i);
+   }
+   
+}
+
 // 6.Write a function to calculate the factorial of a number.
 
 
@@ -95,4 +122,37 @@ int fact(int x){
     z=z*i;
    }
 return z;   
+}
+
+// 10. Write a function to print all prime factors of a given number. For example , if the number is 36 , then your result should be 2,2,3,3 (TSRN)
+
+#include <stdio.h>
+void factor(int);
+int main() {
+    // Write C code here
+    int x;
+    printf("Enter a number=\t");
+    scanf("%d",&x);
+    factor(x);
+    return 0;
+}
+void factor(int x){
+    int i,j;
+    for (int i = 2; i <= x; i++)
+    {
+        if (i%x==0)
+        {
+            for (int j = 2; j <= i-1; j++)
+            {
+                if (j%i!=0)
+                {
+                    printf("%d,",j);
+                }
+                
+            }
+            
+        }
+        
+    }
+    
 }
