@@ -123,6 +123,48 @@ int fact(int x){
    }
 return z;   
 }
+
+// 7. Write a function to calculate the number of combination one can make from n items & r selected at a time (TSRS)
+
+#include <stdio.h>
+int comb(int,int);
+int fact(int);
+int main() {
+    // Write C code here
+    int n,r;
+    printf("Enter a value of 'n' ");
+    scanf("%d",&n);
+    printf("Enter a value of 'r' ");
+    scanf("%d",&r);
+    printf("The Output is = %d",comb(n,r));
+    return 0;
+}
+int comb(int n,int r){
+  int x;
+  x= fact(n)/fact(r)/fact(n-r);
+return x;  
+}
+// 8. Write a function to calculate the number of arrangements one can make from n items & r selected at a time (TSRS)
+#include <stdio.h>
+int comb(int,int);
+int fact(int);
+int main() {
+    // Write C code here
+    int n,r;
+    printf("Enter a value of 'n' ");
+    scanf("%d",&n);
+    printf("Enter a value of 'r' ");
+    scanf("%d",&r);
+    printf("The Output is = %d",comb(n,r));
+    return 0;
+}
+int comb(int n,int r){
+  int x;
+  x= fact(n)/fact(n-r);
+return x;  
+}
+
+
 // 9. Write a function to check whether a given number contains a given digit or not.(TSRS)
 
 #include <stdio.h>
