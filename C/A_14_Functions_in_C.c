@@ -146,7 +146,7 @@ return x;
 }
 // 8. Write a function to calculate the number of arrangements one can make from n items & r selected at a time (TSRS)
 #include <stdio.h>
-int comb(int,int);
+int permu(int,int);
 int fact(int);
 int main() {
     // Write C code here
@@ -155,10 +155,10 @@ int main() {
     scanf("%d",&n);
     printf("Enter a value of 'r' ");
     scanf("%d",&r);
-    printf("The Output is = %d",comb(n,r));
+    printf("The Output is = %d",permu(n,r));
     return 0;
 }
-int comb(int n,int r){
+int permu(int n,int r){
   int x;
   x= fact(n)/fact(n-r);
 return x;  
@@ -176,34 +176,29 @@ int main() {
     scanf("%d",&n);
     printf("Enter a Digit which you want to check");
     scanf("%d",&x);
-    a=number(n,x);
-   if (a==1)
-   {
-    printf("%d is there in the given number",x);
-   }
-   else if (a==0)
-   {
-    printf("%d is not there in the given number",x);
-   }
-   
-   
-
+    if (number(n,x))
+    {
+        printf("Given number contains a Given digit");
+    }
+    else 
+    {
+       printf("Given number do not contains a Given digit");
+    }
     return 0;
 }
 int number(int n,int x){
     int b;
-    while (n!=0)
+while (n!=0){
+    b=n%10;
+    if (b==x)
     {
-        b=n%10;
-        if (b==x){
-            break;
-        }
+        return 1;
+    }
+    else{
         n=n/10;
     }
-    if (n==0)
-        return 0;
-    else 
-     return 1;
+    return 0;
+}
     
 
 }
