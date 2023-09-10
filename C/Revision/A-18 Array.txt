@@ -1,0 +1,3 @@
+5. Write a program to calculate the smallest number in an array entered by the user stored in an array of size 10 . Take array values from the user.
+// 8. Write a program to calculate the second smallest number in an array entered by the user stored in an array of size 10 . Take array values from the user.
+// 7. Write a program to calculate the second Largest number in an array entered by the user stored in an array of size 10 . Take array values from the user.
