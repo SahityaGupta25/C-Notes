@@ -44,7 +44,40 @@ int great(int brr[],int n){
     
    return 0;
 }
-    
 
+// 3. Write a function to sort an array of any size.
+
+
+#include <stdio.h>
+int sort(int brr[],int n){
+    int i,temp,j;
+    for ( i = 0; i < n; i++)
+    {
+        for ( j = i+1; j < n; j++)
+        {
+            /* code */
+        if (brr[i]>brr[j])
+        {
+           temp = brr[i];
+           brr[i]= brr[j];
+           brr[j] = temp;
+        }
+        }
+        
+    
+    }
+   for ( i = 0; i < n; i++)
+   {
+    printf("%d ",brr[i]);
+   }
+   
+}  
+
+  int main(){
+    int arr[] = {5,4,1,66,9,6} ,i, max=arr[0] , n=sizeof(arr)/4;
+    sort(arr,n);
+    
+   return 0;
+}
 
 
