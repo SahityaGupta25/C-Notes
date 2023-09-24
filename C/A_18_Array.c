@@ -155,7 +155,7 @@ int main() {
     {
     printf("%d ",a[i]);
     }
-
+ printf("\n");
     for ( i = 0; i < 10; i++)
     {
         for ( j = i+1; j < 10; j++)
@@ -267,3 +267,86 @@ printf("\n");
     
     return 0;
 }
+
+// 9. Write a program to sort an array in Decending Order in an array of size 10 . Take array values from the user.
+
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int i,a[10],j,temp;
+    printf("Enter 10 Numbers\n");
+    for ( i = 0; i <=9; i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("OLD Array\n");
+    for  (i = 0; i <=9; i++)
+    {
+    printf("%d ",a[i]);
+    }
+ printf("\n");
+    for ( i = 0; i < 10; i++)
+    {
+        for ( j = i+1; j < 10; j++)
+        {
+            if (a[i]<a[j])
+            {
+                temp=a[i];
+                a[i]=a[j];
+                a[j]=temp; 
+            }
+            
+        }
+        
+    }
+    printf("New Array\n");
+    for  (i = 0; i <=9; i++)
+    {
+    printf("%d ",a[i]);
+    }
+
+    
+    return 0;
+}
+
+// 10. Write  a program in C to copy the elements of are array into another array . Take array values from the user.
+
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int i,n;
+    printf("How many numbers you want to enter = ");
+    scanf("%d",&n);
+    printf("Enter %d Numbers\n",n);
+    int arr[n],brr[n];
+    for ( i = 0; i < n; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("\n OLD ARRAY 'arr'\n");
+     for ( i = 0; i < n; i++)
+    {
+        printf("%d ",arr[i]);
+    }
+    printf("\n NEW ARRAY 'brr'\n");
+     for ( i = 0; i < n; i++)
+    {
+        brr[i] = arr[i];
+        printf("%d ",brr[i]);
+    }
+    
+   
+    
+    
+    return 0;
+}
+
+//  int printar(int arr[],int n);
+//     int i;
+//     for ( i = 0; i < n; i++)
+//     {
+//         printf("%d",arr[i]);
+//     }
+//     return i;
