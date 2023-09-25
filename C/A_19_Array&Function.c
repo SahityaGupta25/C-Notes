@@ -80,4 +80,34 @@ int sort(int brr[],int n){
    return 0;
 }
 
+// 5.Write a function to find the first occurrence of the adjacent  duplicate values in the array . Function has to return  value of the element.
+
+// 6. Write  a function to swap two elements of given array with specified indicies.
+
+#include <stdio.h>
+int swap(int brr[],int n,int a,int b){
+    int temp ,i;
+    temp = brr[a];
+    brr[a] = brr[b];
+    brr[b] = temp;
+for ( i = 0; i < n; i++)
+{
+    printf("%d ",brr[i]);
+}
+
+} 
+
+  int main(){
+    int arr[] = {5,4,1,66,9,6} ,a,b,i, max=arr[0] , n=sizeof(arr)/4;
+    printf("Enter Index Number which you want to swap\n");
+    printf("Enter the Index Number 1 = ");
+    scanf("%d",&a);
+    printf("\nEnter the Index Number 2 = ");
+    scanf("%d",&b);
+    swap(arr,n,a,b);
+    
+   return 0;
+}
+
+
 
