@@ -109,5 +109,34 @@ for ( i = 0; i < n; i++)
    return 0;
 }
 
+// 7. Write a function to count a total number of duplicate elements in an array . (Means elements that occurs 2 times in an array.)
+
+
+#include<stdio.h>
+int count(int brr[],int n){
+    int i,j,count=0;
+    for ( i = 0; i < n; i++)
+    {
+        for ( j = i+1; j < n; j++)
+        {
+            if (brr[i]==brr[j])
+            {
+                count+=1;
+            }
+            
+        }
+        
+    }
+    return count;
+}
+
+
+  int main(){
+    int arr[] = {5,4,1,66,5,1,9,6} ,i, max=arr[0] , n=sizeof(arr)/4;
+    printf("The Total Duplicate Elements in this array is = %d",count(arr,n));
+    
+   return 0;
+}
+
 
 
