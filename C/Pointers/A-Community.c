@@ -3,34 +3,44 @@
 // Q.1 Write a function to swap values of two in variables of calling function. (TSRS)
 
 
-#include<stdio.h>
-void swap(int* , int*);
-int main(){
-    int a,b ;
-    printf("Enter the value of 'a'\n");
-    scanf("%d",&a);
-    printf("Enter the value of 'b'\n");
-    scanf("%d",&b);
-    swap(&a,&b);
-    printf("Now the value of a = %d\n",a);
-    printf("Now the value of b = %d",b);
+// #include<stdio.h>
+// void swap(int* , int*);
+// int main(){
+//     int a,b ;
+//     printf("Enter the value of 'a'\n");
+//     scanf("%d",&a);
+//     printf("Enter the value of 'b'\n");
+//     scanf("%d",&b);
+//     swap(&a,&b);
+//     printf("Now the value of a = %d\n",a);
+//     printf("Now the value of b = %d",b);
     
 
-}
+// }
 
-void swap(int *x, int *y ){
-int z;
-z=*x;
-*x=*y;
-*y=z;
+// void swap(int *x, int *y ){
+// int z;
+// z=*x;
+// *x=*y;
+// *y=z;
 
 
 
-}
+// }
 
 // 2. Write a function to search all concurrences of a given character in a given string.
 // Result of search is a list of indices to be stored in the given array.
-// [void search_all_occurences (char *str , char *ch , int *arr)].
+// [void search_all_occurences (char *str , char ch , int *arr)].
 
 
-int 
+#include<stdio.h>
+int main(){
+    int *array;
+    char character, *string;
+    printf("Enter a String\n");
+    scanf("%d",&string);
+    printf("Enter a Character which you want to find in the string = ")
+
+
+    
+}
