@@ -27,3 +27,10 @@ z=*x;
 
 
 }
+
+// 2. Write a function to search all concurrences of a given character in a given string.
+// Result of search is a list of indices to be stored in the given array.
+// [void search_all_occurences (char *str , char *ch , int *arr)].
+
+
+int 
