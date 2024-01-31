@@ -23,6 +23,7 @@
 
 #include<stdio.h>
 
+Data(){
 struct Employee {
     int id;
     char name[20];
@@ -30,20 +31,25 @@ struct Employee {
     
 
 };
-
-int main (){
     struct Employee xyz[3];
-for (int i = 0; i < 3; i++)
+for (int i = 0; i < 1; i++)
 {
     scanf("%d %s %d",&xyz[i].id,&xyz[i].name,&xyz[i].salary);
     
 }
-for (int i = 0; i < 3; i++)
+for (int i = 0; i < 1; i++)
 {
     
     printf("id=%d\nname=%s\nSalary=%d",xyz[i].id,xyz[i].name,xyz[i].salary);
 }
 
+    }
 
+int main (){
+
+printf(" Enter Details\n1. ID\n2. Name\n3. Salary\nNote: Enter Details , Seprating by ''Pressing 'ENTER'''\n");
+Data();
+
+return 0;
 
 }
