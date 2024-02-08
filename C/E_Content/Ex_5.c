@@ -13,3 +13,14 @@ int main (){
 
     return 0;
 }
+
+//Recursive function
+#include<stdio.h>
+int main (){
+    int num;
+    printf("Enter a number of which you want to calculate factorial = ");
+    scanf("%d",&num)
+
+    return 0;
+}
+
